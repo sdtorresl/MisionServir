@@ -1,0 +1,29 @@
+body {
+	background-image: url('../img/bg.jpeg');
+}
+.main {
+	background: rgba(40, 40, 40, 0.9);
+	margin: 0;
+	padding: 0;
+}
+.container article, .container aside {
+	height: 100vh;
+}
+.clear {
+	clear: both;
+}
+.main .row {
+	margin-bottom: 0;
+}
+.message {
+	margin: auto;
+}
+img {
+	max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+	.container article, .container aside {
+		height: 100%;
+		margin: 5% 0 5% 0;
+	}
+}

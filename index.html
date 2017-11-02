@@ -29,14 +29,85 @@
 	</head>
 	
 	<body>
-		<nav></nav>
+
+		<!-- Main Menu -->
+		<header id="main-menu" class="sticky row">
+			<div>
+				<label for="drawer-checkbox" class="button drawer-toggle"></label>
+
+				<a href="#home" class="button hidden-sm">Inicio</a>
+				<a href="#services" class="button hidden-sm">Servicios</a>
+				<a href="#contact" class="button hidden-sm">Contacto</a>
+			</div>
+		</header>
+
+		<!-- Mobile Menu -->
+		<input type="checkbox" id="drawer-checkbox">
+		<nav id="main-menu-mobile" class="drawer hidden-md hidden-lg">
+			<label for="drawer-checkbox" class="close"></label>
+
+			<a href="#home">Inicio</a>
+			<a href="#services">Servicios</a>
+			<a href="#contact">Contacto</a>
+		</nav>
 		
-		<header></header>
+		<section id="home" class="full-display">
+			<a href="" class="up-button">
+				<img src="img/arriba.png" alt="Arriba">
+			</a>
+			<figure><img src="img/mision_servir.png" alt="Logo"></figure>
+
+			<div class="slogan">
+				<h2>Nuestra Misión es Servirle</h2>
+			</div>
+
+			<a href="" class="down-button">
+				<img src="img/abajo.png" alt="Abajo">
+			</a>
+		<sectionr>
 		
-		<section>
-			<article></article>
+		<section class="services">
+			
+			<section id="mision-limpieza" class="full-display">
+				<a href="" class="up-button">
+					<img src="img/arriba.png" alt="Arriba">
+				</a>
+				<article></article>
+			</section>
 		</section>
 
-		<footer></footer>
+		<section id="contact" class="full-display">
+			<a href="" class="up-button">
+				<img src="img/arriba.png" alt="Arriba">
+			</a>
+			
+			<footer>
+				<div class="social-networks">
+					<a href="https://facebook.com">
+						<figure>
+							<img src="img/facebook.png" alt="Facebook">
+							<figcaption>Facebook</figcaption>
+						</figure>
+					</a>
+					<a href="http://plus.google.com">
+						<figure>
+							<img src="img/google.png" alt="Google">
+							<figcaption>Google</figcaption>
+						</figure>
+					</a>
+					<a href="http://twitter.com">
+						<figure>
+							<img src="img/twitter.png" alt="twitter">
+							<figcaption>Twitter</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="info">
+					<p>Misión Servir &copy 2017. Todos los derechos reservados</p>
+					<p>Diseñado y desarrollado por <a href="http://innovaciones.co">Innovaciones</a></p>
+				</div>
+			</footer>
+		</section>
 	</body>
 </html>

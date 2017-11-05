@@ -1,0 +1,13 @@
+/* Standard syntax */
+@keyframes backgroundSize {
+    from {
+    	-webkit-background-size: 150%;
+    	background-size: 150%;
+    	background-position: 50%;
+    }
+    to {
+    	-webkit-background-size: 100% auto;
+    	background-size: 100% auto;
+    	background-position: 50%;
+    }
+}

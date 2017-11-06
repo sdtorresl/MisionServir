@@ -9,7 +9,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/normalize.css" media="screen" title="no title">
 		<link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
-		<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='css/jquery.fullPage.css' rel='stylesheet' type='text/css'> -->
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/main.css" media="screen">
@@ -28,29 +28,17 @@
 	<body>
 
 		<!-- Main Menu -->
-		<header id="main-menu" class="sticky row">
-			<div>
-				<label for="drawer-checkbox" class="button drawer-toggle"></label>
-
-				<a href="#home" class="button hidden-sm">Inicio</a>
-				<a href="#services" class="button hidden-sm">Servicios</a>
-				<a href="#contact" class="button hidden-sm">Contacto</a>
-			</div>
-		</header>
-
-		<!-- Mobile Menu -->
-		<input type="checkbox" id="drawer-checkbox">
-		<nav id="main-menu-mobile" class="drawer hidden-md hidden-lg">
-			<label for="drawer-checkbox" class="close"></label>
-
-			<a href="#home">Inicio</a>
-			<a href="#services">Servicios</a>
-			<a href="#contact">Contacto</a>
+		<nav id="main-menu" class="sticky row">
+			<ul>
+				<li><a href="#home">Inicio</a></li>
+				<li><a href="#services-intro">Servicios</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
 		</nav>
 		
 		<div class="main">
 			
-			<section id="home" class="full-display">
+			<section id="home" class="section full-display">
 				<figure class="logo">
 					<img src="img/mision_servir.png" alt="Logo">
 				</figure>
@@ -59,16 +47,56 @@
 					<h2>Nuestra Misión es Servirle</h2>
 				</div>
 
-				<a href="#mision-limpieza" class="down-button">
+				<a href="#services-intro" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 			
-			<!-- <section id="services-intro" class="full-display">
+			<section id="services-intro" class="section full-display">
+				<a href="#home" class="up-button">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
+				</a>
 				
-			</section> -->
+				<div class="separator white-bg strong">
+					<h2>Nuestra misión es servirle</h2>
+				</div>
 
-			<section id="mision-limpieza" class="full-display">
+				<div class="container">
+					<p>MISIÓN SERVIR una novedosa alternativa especializada en la prestación de servicios en outsorcing, brindando soluciones efectivas a nuestros clientes.</p>
+					<div class="quote">
+						<p>"Usted merece gestionar con plena <strong>TRANQUILIDAD</strong>, junto a una empresa de servicios que le brinde <strong>CONFIABILIDAD</strong>"</p>
+					</div>
+
+					<div class="features">
+						<div class="item">
+							<figure class="item-icon"><img src="img/trabajo_personalizado.png" alt="Trabajo Personalizado"></figure>
+							<h3>Trabajo Personalizado</h3>
+							<p>Implementamos una metodología de servicio fundamentada en un plan operativo de trabajo personalizado basado en las especificaciones técnicas de cada cliente.</p>
+						</div>
+						<div class="item">
+							<figure class="item-icon"><img src="img/sentido_humano.png" alt="Servicio con Sentido Humano"></figure>
+							<h3>Servicio con Sentido Humano</h3>
+							<p>Estamos comprometidos con el bienestar y la integridad física y psicosocial de nuestros trabajadores.</p>
+						</div>
+						<div class="item">
+							<figure class="item-icon"><img src="img/atencion_oportuna.png" alt="Atención Oportuna"></figure>
+							<h3>Atención Oportuna</h3>
+							<p>Contamos con un soporte y acompañamiento administrativo oportuno en la atención de las novedades del servicio.</p>
+						</div>
+						<div class="item">
+							<figure class="item-icon"><img src="img/supervision_efectiva.png" alt="Supervisión Efectiva"></figure>
+							<h3>Supervisión Efectiva</h3>
+							<p>Implementamos una metodología de servicio fundamentada en la Planeación, Supervisión Frecuente y el Control Profesional del Servicio.</p>
+						</div>
+					</div>
+				</div>
+
+				<a href="#mision-limpieza" class="down-button">
+					<img src="img/abajo_oscuro.png" alt="Abajo">
+				</a>
+			</section>
+
+			<section id="mision-limpieza" class="section full-display">
 				<a href="#services-intro" class="up-button">
 					<img src="img/arriba.png" alt="Arriba">
 				</a>
@@ -92,13 +120,13 @@
 					</div>
 				</article>
 
-				<a href="" class="down-button">
+				<a href="#mision-especializada" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 
-			<section id="mision-especializada" class="full-display">
-				<a href="" class="up-button">
+			<section id="mision-especializada" class="section full-display">
+				<a href="#mision-limpieza" class="up-button">
 					<img src="img/arriba.png" alt="Arriba">
 				</a>
 
@@ -121,13 +149,13 @@
 					</div>
 				</article>
 
-				<a href="" class="down-button">
+				<a href="#mision-mantener" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 
-			<section id="mision-mantener" class="full-display">
-				<a href="" class="up-button">
+			<section id="mision-mantener" class="section full-display">
+				<a href="#mision-especializada" class="up-button">
 					<img src="img/arriba.png" alt="Arriba">
 				</a>
 
@@ -150,13 +178,13 @@
 					</div>
 				</article>
 
-				<a href="" class="down-button">
+				<a href="#mision-natural" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 
-			<section id="mision-natural" class="full-display">
-				<a href="" class="up-button">
+			<section id="mision-natural" class="section full-display">
+				<a href="#mision-mantener" class="up-button">
 					<img src="img/arriba.png" alt="Arriba">
 				</a>
 				
@@ -179,13 +207,13 @@
 					</div>
 				</article>
 
-				<a href="" class="down-button">
+				<a href="#contact" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 
-			<section id="contact" class="full-display">
-				<a href="" class="up-button">
+			<section id="contact" class="section full-display">
+				<a href="#mision-natural" class="up-button">
 					<img src="img/arriba.png" alt="Arriba">
 				</a>
 				
@@ -193,42 +221,62 @@
 					<h2>Contacto</h2>
 				</div>
 
-				<form action="post">
-					<fieldset>
-						<div class="input-group row">
-							<div class="col-sm-4">
-								<label for="name">Nombre</label>
+				<div class="container">
+					<div class="row">
+						
+						<aside class="contact-info col-md-5">
+							<figure><img src="img/contacto.png" alt="Contacto"></figure>
+
+							<div>
+								<p>Misión Servir</p>
+								<p>Dirección: Calle 67 N* 12 - 23</p>
+								<p>Teléfono: 5554433</p>
+								<p>Correo: correo@misionservir.com</p>
 							</div>
-							<div class="col-sm-8">	
-								<input type="text" name="name">
+						</aside>
+
+						<form action="contact.php" type="post" class="col-md-7">
+							<div class="row responsive-label">
+								<div class="col-md-4">
+									<label for="name">Nombre</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" name="name">
+								</div>
 							</div>
-						</div>
-						<div class="input-group row">
-							<div class="col-sm-4">
-								<label for="phone">Teléfono</label>
+							<div class="row responsive-label">
+								<div class="col-md-4">
+									<label for="phone">Teléfono</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" name="phone">
+								</div>
 							</div>
-							<div class="col-sm-8">	
-								<input type="text" name="phone">
+							<div class="row responsive-label">
+								<div class="col-md-4">
+									<label for="email">Correo Electrónico</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" name="email">
+								</div>
 							</div>
-						</div>
-						<div class="input-group row">
-							<div class="col-sm-4">
-								<label for="email">Correo Electrónico</label>
+							<div class="row responsive-label">
+								<div class="col-md-4">
+									<label for="message">Mensaje</label>
+								</div>
+								<div class="col-md-8">
+									<textarea type="text" rows="5" name="message"></textarea>
+								</div>
 							</div>
-							<div class="col-sm-8">	
-								<input type="text" name="email">
+
+							<div class="row responsive-label">
+								<div class="col-md-12">
+									<input type="submit" value="Enviar">
+								</div>
 							</div>
-						</div>
-						<div class="input-group row">
-							<div class="col-sm-4">
-								<label for="message">Mensaje</label>
-							</div>
-							<div class="col-sm-8">	
-								<input type="text" name="message">
-							</div>
-						</div>
-					</fieldset>
-				</form>
+						</form>
+					</div>
+				</div>
 
 				<footer>
 					<div class="social-networks">
@@ -259,25 +307,11 @@
 
 
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
 
 		<!-- Custom JS -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="js/main.js" charset="utf-8"></script>
 
 
-		<script type="text/javascript">
-		
-		$(document).ready(function(){
-
-			$(".main").onepage_scroll({
-			   sectionContainer: "section", // sectionContainer acepta cualquier tipo de selector, en caso de que no desees usar section
-			   easing: "ease", // Las opciones de tipo de animaciòn acepta estilos de animaciòn CSS· tales como "ease", "linear", "ease-in", "ease-out", "ease-in-out", o incluso valores de bezier-cubico como "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-			   animationTime: 900, // AnimationTime te permite definir cuànto tiempo le tomarà a la secciòn ejecutar la animaciòn
-			   pagination: true, // Puedes decidir que se muestre o no la paginaciòn para tus secciones detectadas, los valores son True para mostrar, false para ocultar.
-			});
-			
-		});
-		</script>
 	</body>
 </html>

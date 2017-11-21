@@ -124,3 +124,62 @@ function onScroll(event){
         }
     });
 }
+
+
+
+(function(){
+    $("#sentButton").click(function() {
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var phone = $("#phone").val();
+        var message = $("#message").val();
+        var validateMail = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+ 
+        if (name == "") {
+            $("#name").focus();
+            $('#hint').text('* Por favor escriba su nombre');
+            return false;
+        }else if(phone == ""){
+            $("#phone").focus();
+            $('#hint').text('* Por favor escriba su teléfono');
+            return false;
+        }else if(email == "" || !validateMail.test(email)){
+            $("#email").focus();  
+            $('#hint').text('* Por favor escriba su correo electrónico');  
+            return false;
+        }else if(message == ""){
+            $("#message").focus();
+            $('#hint').text('* Por favor escriba su mensaje');  
+            return false;
+        }else{
+            // All validations correct
+            $('.loading').removeClass('hidden').fadeIn();
+            $('#hint').text('');  
+
+            var data = 'name='+ name + '&email=' + email + '&phone=' + phone + '&message=' + message;
+            $.ajax({
+                type: "POST",
+                url: "contact.php",
+                data: data,
+                success: function() {
+                    $('.loading').hide();
+                    $('.dialog').removeClass('hidden').fadeIn();
+                    $('#message').text('Mensaje enviado!').addClass('success').animate({ 'right' : '130px' }, 300);  
+                },
+                error: function() {
+                    $('.loading').hide();
+                    $('.dialog').removeClass('hidden').fadeIn();
+                    $('#message').text('Hubo un error!').addClass('error').animate({ 'right' : '130px' }, 300);                 
+                }
+            });
+
+            return false;
+        }
+    });
+
+    $(".close-button").click(function(event) {
+        event.stopPropagation();
+        $(this).parent('.dialog').fadeOut();
+    });
+})();

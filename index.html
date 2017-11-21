@@ -16,12 +16,23 @@
 		<link rel="stylesheet" href="css/keyframes.css" media="screen">
 
 		<!-- Icons -->
-
+		<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png" />
 
 		
 		<!-- For responsive design -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+		<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
 		<title>Mision Servir</title>
 	</head>
 	
@@ -29,6 +40,10 @@
 
 		<!-- Main Menu -->
 		<nav id="main-menu" class="sticky row">
+			<figure class="logo">
+				<img src="img/mision_servir_dark.png" alt="Logo">
+			</figure>
+
 			<ul>
 				<li><a href="#home">Inicio</a></li>
 				<li><a href="#services-intro">Servicios</a></li>
@@ -39,9 +54,6 @@
 		<div class="main">
 			
 			<section id="home" class="section full-display">
-				<figure class="logo">
-					<img src="img/mision_servir.png" alt="Logo">
-				</figure>
 
 				<div class="slogan">
 					<h2>Nuestra Misión es Servirle</h2>
@@ -58,7 +70,7 @@
 				</a>
 				
 				<div class="separator white-bg strong">
-					<h2>Nuestra misión es servirle</h2>
+					<h2>Nuestra Misión es Servirle</h2>
 				</div>
 
 				<div class="container">
@@ -68,11 +80,11 @@
 					</div>
 
 					<div class="features">
-						<div class="item">
+						<!-- <div class="item">
 							<figure class="item-icon"><img src="img/trabajo_personalizado.png" alt="Trabajo Personalizado"></figure>
 							<h3>Trabajo Personalizado</h3>
 							<p>Implementamos una metodología de servicio fundamentada en un plan operativo de trabajo personalizado basado en las especificaciones técnicas de cada cliente.</p>
-						</div>
+						</div> -->
 						<div class="item">
 							<figure class="item-icon"><img src="img/sentido_humano.png" alt="Servicio con Sentido Humano"></figure>
 							<h3>Servicio con Sentido Humano</h3>
@@ -86,22 +98,22 @@
 						<div class="item">
 							<figure class="item-icon"><img src="img/supervision_efectiva.png" alt="Supervisión Efectiva"></figure>
 							<h3>Supervisión Efectiva</h3>
-							<p>Implementamos una metodología de servicio fundamentada en la Planeación, Supervisión Frecuente y el Control Profesional del Servicio.</p>
+							<p>Implementamos una metodología de servicio fundamentada en la planeación, supervisión frecuente y el control profesional del servicio.</p>
 						</div>
 					</div>
 				</div>
 
-				<a href="#mision-limpieza" class="down-button">
+				<a href="#mision-limpieza1" class="down-button">
 					<img src="img/abajo_oscuro.png" alt="Abajo">
 				</a>
 			</section>
 
-			<section id="mision-limpieza" class="section full-display">
+			<section id="mision-limpieza1" class="section full-display">
 				<a href="#services-intro" class="up-button">
-					<img src="img/arriba.png" alt="Arriba">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
 				</a>
 
-				<article class="right black-bg">
+				<article class="left black-bg">
 					<div class="container">
 						<figure class="services-img">
 							<img src="img/mision_limpieza.png" alt="Misión Limpieza">
@@ -120,14 +132,36 @@
 					</div>
 				</article>
 
+				<a href="#mision-limpieza2" class="down-button">
+					<img src="img/abajo.png" alt="Abajo">
+				</a>
+			</section>
+
+			<section id="mision-limpieza2" class="section full-display">
+				<a href="#mision-limpieza1" class="up-button">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
+				</a>
+
+				<article class="right light-blue-bg">
+					<div class="container">
+						<figure class="services-img">
+							<img src="img/mision_limpieza.png" alt="Misión Limpieza">
+						</figure>
+
+						<ul>
+							<li>Suministro de insumos de aseo</li>
+						</ul>
+					</div>
+				</article>
+
 				<a href="#mision-especializada" class="down-button">
 					<img src="img/abajo.png" alt="Abajo">
 				</a>
 			</section>
 
 			<section id="mision-especializada" class="section full-display">
-				<a href="#mision-limpieza" class="up-button">
-					<img src="img/arriba.png" alt="Arriba">
+				<a href="#mision-limpieza2" class="up-button">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
 				</a>
 
 				<article class="left green-bg">
@@ -138,13 +172,10 @@
 
 						<h3>Servicios de limpieza profesional en:</h3>
 						<ul>
-							<li>Edificios Corporativos</li>
-							<li>Oficinas</li>
-							<li>Unidades Residenciales</li>
-							<li>Plantas Industriales</li>
-							<li>Bodegas</li>
-							<li>Entidades de Salud</li>
-							<li>Centros Comerciales</li>
+							<li>Trabajos de limpieza en alturas<br>(fachadas, vidrios y estructuras altas).</li>
+							<li>Tratamiento especializado de pisos.</li>
+							<li>Lavado de alfombras y muebles.</li>
+							<li>Brigadas generales de aseo y terminaciones de obra.</li>
 						</ul>
 					</div>
 				</article>
@@ -156,7 +187,7 @@
 
 			<section id="mision-mantener" class="section full-display">
 				<a href="#mision-especializada" class="up-button">
-					<img src="img/arriba.png" alt="Arriba">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
 				</a>
 
 				<article class="right blue-bg">
@@ -165,15 +196,13 @@
 							<img src="img/mision_mantener.png" alt="Misión Mantener">
 						</figure>
 
-						<h3>Servicios de limpieza profesional en:</h3>
+						<h3>Servicios de mantenimiento técnico locativo:</h3>
 						<ul>
-							<li>Edificios Corporativos</li>
-							<li>Oficinas</li>
-							<li>Unidades Residenciales</li>
-							<li>Plantas Industriales</li>
-							<li>Bodegas</li>
-							<li>Entidades de Salud</li>
-							<li>Centros Comerciales</li>
+							<li>Mantenimiento eléctrico.</li>
+							<li>Mantenimiento hidráulico.</li>
+							<li>Obras civiles menores.</li>
+							<li>Adecuaciones de oficina.</li>
+							<li>Pintura.</li>
 						</ul>
 					</div>
 				</article>
@@ -185,7 +214,7 @@
 
 			<section id="mision-natural" class="section full-display">
 				<a href="#mision-mantener" class="up-button">
-					<img src="img/arriba.png" alt="Arriba">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
 				</a>
 				
 				<article class="left light-green-bg">
@@ -196,13 +225,9 @@
 
 						<h3>Servicios de limpieza profesional en:</h3>
 						<ul>
-							<li>Edificios Corporativos</li>
-							<li>Oficinas</li>
-							<li>Unidades Residenciales</li>
-							<li>Plantas Industriales</li>
-							<li>Bodegas</li>
-							<li>Entidades de Salud</li>
-							<li>Centros Comerciales</li>
+							<li>Mantenimiento de jardines.</li>
+							<li>Poda de césped.</li>
+							<li>Reposición de plantas ornamentales.</li>
 						</ul>
 					</div>
 				</article>
@@ -214,7 +239,7 @@
 
 			<section id="contact" class="section full-display">
 				<a href="#mision-natural" class="up-button">
-					<img src="img/arriba.png" alt="Arriba">
+					<img src="img/arriba_oscuro.png" alt="Arriba">
 				</a>
 				
 				<div class="separator green-bg">
@@ -228,10 +253,39 @@
 							<figure><img src="img/contacto.png" alt="Contacto"></figure>
 
 							<div>
-								<p>Misión Servir</p>
-								<p>Dirección: Calle 67 N* 12 - 23</p>
-								<p>Teléfono: 5554433</p>
-								<p>Correo: correo@misionservir.com</p>
+								<p>Misión Servir SAS</p>
+								<div>
+									<span>
+										<a href="tel:+5712884718">
+											<figure><img src="img/telefono.png" alt="Teléfono"></figure>
+										</a>
+									</span>
+									<span>+(571) 2884718 – 2870419</span>
+								</div>
+								<div>
+									<span>
+										<a href="mailto:correo@misionservir.com">
+											<figure>
+												<img src="img/mail.png" alt="Correo">
+											</figure>
+										</a>
+									</span>
+									<span>mision.comercial@misionservir.com</span>
+								</div>
+								<div>
+									<span>
+										<a target="_blank" href="https://goo.gl/UFsZq1">
+											<figure><img src="img/direccion.png" alt="Dirección"></figure>
+										</a>
+									</span>
+									<span>Carrera 17 # 49 -12</span>
+								</div>
+								<div>
+									<span>
+										<figure><img src="img/ubicacion.png" alt="Ubicación"></figure>
+									</span>
+									<span>Bogotá D.C., Colombia</span>
+								</div>
 							</div>
 						</aside>
 
@@ -241,7 +295,7 @@
 									<label for="name">Nombre</label>
 								</div>
 								<div class="col-md-8">
-									<input type="text" name="name">
+									<input type="text" id="name" name="name">
 								</div>
 							</div>
 							<div class="row responsive-label">
@@ -249,7 +303,7 @@
 									<label for="phone">Teléfono</label>
 								</div>
 								<div class="col-md-8">
-									<input type="text" name="phone">
+									<input type="text" id="phone" name="phone">
 								</div>
 							</div>
 							<div class="row responsive-label">
@@ -257,7 +311,7 @@
 									<label for="email">Correo Electrónico</label>
 								</div>
 								<div class="col-md-8">
-									<input type="text" name="email">
+									<input type="text" id="email" name="email">
 								</div>
 							</div>
 							<div class="row responsive-label">
@@ -265,22 +319,53 @@
 									<label for="message">Mensaje</label>
 								</div>
 								<div class="col-md-8">
-									<textarea type="text" rows="5" name="message"></textarea>
+									<textarea type="text" rows="3" id="message" name="message"></textarea>
 								</div>
 							</div>
 
+							<!-- CAPTCHA -->
+							<!-- <div class="col-md-12 captcha">
+								<div class="g-recaptcha" data-sitekey="6Lc0nBIUAAAAAARbNL_3P4_-8lft4Ukw6KE_l10M"></div>
+							</div> -->
+
 							<div class="row responsive-label">
-								<div class="col-md-12">
-									<input type="submit" value="Enviar">
+								
+								
+								<div class="col-md-8">
+									<p id="hint"></p>
+								</div>
+								
+								<div class="col-md-4">
+									<input id="sentButton" type="submit" value="Enviar">
 								</div>
 							</div>
 						</form>
+					</div>
+
+					<div class="loading hidden">
+						<div>
+							<p>Enviando...</p>
+							<p>Aguarde un momento, por favor</p>
+						</div>
+						<div class="lds-css">
+							<div style="width:100%;height:100%" class="lds-dual-ring">
+								<div></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dialog hidden">
+						<a href="#" class="close-thin close-button"></a>
+						<div id="message">
+							<p>Su Mensaje ha sido enviado</p>
+						</div>
+						<input type="button" class="close-button" value="Aceptar">
 					</div>
 				</div>
 
 				<footer>
 					<div class="social-networks">
-						<a href="https://facebook.com">
+						<a href="https://www.facebook.com/profile.php?id=100009384553101">
 							<figure>
 								<img src="img/facebook.png" alt="Facebook">
 							</figure>
@@ -299,7 +384,7 @@
 
 					<div class="info">
 						<p>Misión Servir &copy 2017. Todos los derechos reservados</p>
-						<p>Diseñado y desarrollado por <a href="http://innovaciones.co">Innovaciones</a></p>
+						<p>Diseñado y desarrollado por <a target="_blank" href="http://innovaciones.co">Innovaciones</a></p>
 					</div>
 				</footer>
 			</section>
@@ -311,7 +396,5 @@
 		<!-- Custom JS -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="js/main.js" charset="utf-8"></script>
-
-
 	</body>
 </html>

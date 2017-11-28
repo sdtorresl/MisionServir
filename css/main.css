@@ -314,6 +314,7 @@ section:hover article.right, section:hover article.left {
 	border-bottom: 3px solid white;
 	text-shadow: 1px 5px 10px black;
 	animation: 3s changeFontSize 1;
+	text-align: center;
 }
 
 #contact .separator, #services-intro .separator {
@@ -535,11 +536,4 @@ footer .info p, footer .info a {
 }
 footer .info p {
 	margin: 0 1em 0 1em;
-}
-
-@media (max-width: 768px) {
-	section.full-display {
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
-	}
 }

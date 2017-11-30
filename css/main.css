@@ -125,8 +125,10 @@ section.full-display {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	-webkit-animation: backgroundSize 3s 1; /* Safari 4.0 - 8.0 */
-    animation: backgroundSize 3s 1;
+	/*-webkit-animation: backgroundSize 3s 1;  Safari 4.0 - 8.0 
+    animation: backgroundSize 3s 1;*/
+    -ms-background-position-y: 0;
+    background-position-y: 0;
 }
 
 a.up-button, a.down-button {
@@ -154,6 +156,26 @@ figure.logo, figure.services-img {
 figure.logo img, figure.services-img img {
 	width: auto;
 }
+
+/*Home*/
+
+div#slider { 
+	overflow: hidden; 
+}
+div#slider figure img {
+	width: 25%; 
+	float: left; 
+}
+div#slider figure { 
+	position: relative;
+	width: 400%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite; 
+}
+
 
 /*Services*/
 
@@ -263,23 +285,20 @@ section:hover article.right, section:hover article.left {
 	margin: 0;
 }
 
-#home {
-	background-image: url(../img/home.png);
-}
 #mision-limpieza1 {
-	background-image: url(../img/limpieza.png);
+	background-image: url(../img/photos/limpieza.jpg);
 }
 #mision-limpieza2 {
-	background-image: url(../img/suministros_de_insumos.png);
+	background-image: url(../img/photos/suministros_de_insumos.jpg);
 }
 #mision-especializada {
-	background-image: url(../img/especializada.png);
+	background-image: url(../img/photos/especializada.jpg);
 }
 #mision-mantener {
-	background-image: url(../img/mantener.png);
+	background-image: url(../img/photos/mantener.jpg);
 }
 #mision-natural {
-	background-image: url(../img/natural.png);
+	background-image: url(../img/photos/natural.jpg);
 }
 
 #home .slogan {

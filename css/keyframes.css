@@ -1,4 +1,14 @@
 /* Standard syntax */
+@keyframes slidy {
+	0% { left: 0%; }
+	15% { left: -100%; }
+	30% { left: -200%; }
+	45% { left: -300%; }
+	60% { left: -200%; }
+	75% { left: -100%; }
+	100% { left: 0%; }
+}
+
 @keyframes backgroundSize {
     from {
     	-webkit-background-size: 150%;

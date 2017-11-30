@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+	#home {
+		display: none;
+	}
 	nav#main-menu > ul {
 		display: none;
 	}

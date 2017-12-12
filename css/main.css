@@ -46,6 +46,7 @@ h5 {
 }
 p {
 	font-size: 1.2rem;
+	line-height: 1.2rem;
 }
 
 body {
@@ -287,6 +288,9 @@ section:hover article.right, section:hover article.left {
 
 #mision-limpieza1 {
 	background-image: url(../img/photos/limpieza.jpg);
+	background-position: 0 17px;
+	background-size: 100% 100%;
+	background-repeat: repeat-y;
 }
 #mision-limpieza2 {
 	background-image: url(../img/photos/suministros_de_insumos.jpg);
@@ -322,7 +326,7 @@ section:hover article.right, section:hover article.left {
 	right: 0;
 	left: 0;
 	top: 0;
-	align-items: end;
+	align-items: flex-end;
 	text-transform: uppercase;
 }
 #home .slogan h2 {

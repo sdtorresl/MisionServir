@@ -1,9 +1,9 @@
 @media (max-width: 768px) {
 	#home {
-		display: none;
+		/*display: none;*/
 	}
 	nav#main-menu > ul {
-		display: none;
+		/*display: none;*/
 	}
 	section.full-display {
 		-webkit-background-size: auto 100%;

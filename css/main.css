@@ -58,6 +58,13 @@ img {
 	max-height: 100%;
 }
 
+.desktop {
+	visibility: visible;
+}
+.mobile {
+	visibility: hidden;
+}
+
 #main-menu {
 	background: rgba(255, 255, 255, 1);
 	padding: 0 10px;

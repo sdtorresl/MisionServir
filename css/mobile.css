@@ -1,9 +1,28 @@
 @media (max-width: 768px) {
-	#home {
-		/*display: none;*/
+	.desktop {
+		display: none!important;
 	}
-	nav#main-menu > ul {
-		/*display: none;*/
+	.mobile {
+		visibility: visible;
+	}
+	ul.mobile a:hover {
+		border: none!important;
+	}
+	#home #slider {
+		display: none;
+	}
+	#home {
+		background: #008178;
+		height: auto;
+		min-height: 50vh;
+	}
+	#home .slogan {
+		top: 4rem;
+		padding: 1rem;
+		align-items: center;
+	}
+	figure.logo, figure.services-img {
+	    width: 130px;
 	}
 	section.full-display {
 		-webkit-background-size: auto 100%;
@@ -43,6 +62,12 @@
 	}
 	#services-intro .quote {
 		width: 80%;
+	}
+
+	#mision-limpieza1 {
+		background-image: url(../img/photos/limpieza.jpg);
+		background-position: 0px;
+		background-size: auto 100%;
 	}
 
 	#contact .separator, #services-intro .separator {

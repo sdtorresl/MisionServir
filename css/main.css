@@ -36,7 +36,7 @@ h2 {
 	font-size: 1.6rem;
 }
 h3 {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 h4 {
 	font-size: 1.4rem;
@@ -59,10 +59,10 @@ img {
 }
 
 .desktop {
-	visibility: visible;
+	display: inline;
 }
 .mobile {
-	visibility: hidden;
+	display: none!important;
 }
 
 #main-menu {
@@ -295,7 +295,6 @@ section:hover article.right, section:hover article.left {
 
 #mision-limpieza1 {
 	background-image: url(../img/photos/limpieza.jpg);
-	background-position: 0 17px;
 	background-size: 100% 100%;
 	background-repeat: repeat-y;
 }
@@ -336,7 +335,7 @@ section:hover article.right, section:hover article.left {
 	align-items: flex-end;
 	text-transform: uppercase;
 }
-#home .slogan h2 {
+#home .slogan h1 {
 	padding: 0.5rem;
 	font-family: 'Blue';
 	font-size: 2rem;

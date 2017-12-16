@@ -27,7 +27,7 @@
 	$phone = $_POST['phone'];
 	$message = $_POST['message'];
 	// Set mail
-	$adminMail = "soluciones@innovaciones.co"; 
+	$adminMail = "mision.comercial@misionservir.com"; 
 	 
 	// Estas son cabeceras que se usan para evitar que el correo llegue a SPAM:
 	$headers = "From: mision.comercial@misionservir.com\r\n";

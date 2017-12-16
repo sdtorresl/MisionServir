@@ -3,7 +3,7 @@
 		display: none!important;
 	}
 	.mobile {
-		visibility: visible;
+		display: inline;
 	}
 	ul.mobile a:hover {
 		border: none!important;

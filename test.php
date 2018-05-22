@@ -21,8 +21,8 @@ if ($name == '' || $email == '' || $phone == '' || $message == '') {
 }
 
 // Set mail
-$adminMail = "mision.comercial@misionservir.com"; 
-// $adminMail = "sdtorresl@innovaciones.co"; 
+//$adminMail = "mision.comercial@misionservir.com"; 
+$adminMail = "sdtorresl@innovaciones.co"; 
 
 // Create message to administrator
 $subjectAdmin = "Nuevo contacto en Misión Servir";

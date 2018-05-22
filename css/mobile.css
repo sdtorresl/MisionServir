@@ -1,15 +1,24 @@
-@media (max-width: 768px) {
+@media (min-width: 600px) {
+	.mobile {
+		display: none!important;
+	}
+}
+@media (max-width: 340px) {
+	.mobile {
+		display: none!important;
+	}
+}
+@media (max-width: 600px) {
 	.desktop {
 		display: none!important;
 	}
-	.mobile {
-		display: inline;
-	}
+
 	ul.mobile a:hover {
 		border: none!important;
 	}
-	#home #slider {
-		display: none;
+	#slider figure img{
+		margin-top: 80px !important;
+		height: auto!important;
 	}
 	#home {
 		background: #008178;
@@ -17,12 +26,18 @@
 		min-height: 50vh;
 	}
 	#home .slogan {
-		top: 4rem;
+		/*top: 4rem;
 		padding: 1rem;
-		align-items: center;
+		align-items: center;*/
+		display: none;
 	}
-	figure.logo, figure.services-img {
+	figure.logo {
 	    width: 130px;
+	}
+	figure.services-img {
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	section.full-display {
 		-webkit-background-size: auto 100%;
@@ -66,8 +81,16 @@
 
 	#mision-limpieza1 {
 		background-image: url(../img/photos/limpieza.jpg);
-		background-position: 0px;
+		/*background-position: 0px;*/
+		background-position: -830px;
 		background-size: auto 100%;
+	}
+	#mision-limpieza2 {
+		background-position: -80px;
+
+	}
+	#mision-especializada{
+		background-position: -600px;
 	}
 
 	#contact .separator, #services-intro .separator {

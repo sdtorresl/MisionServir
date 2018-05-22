@@ -58,13 +58,6 @@ img {
 	max-height: 100%;
 }
 
-.desktop {
-	display: inline;
-}
-.mobile {
-	display: none!important;
-}
-
 #main-menu {
 	background: rgba(255, 255, 255, 1);
 	padding: 0 10px;
@@ -503,7 +496,7 @@ article .container {
 	text-align: center;
 	z-index: 10000;
 	transform: translateY(-60%);
-	-webkit-transform: translateY(-60%)
+	-webkit-transform: translateY(-300%)
 }
 
 /* Close Button */
